@@ -1,5 +1,5 @@
 {
-  "bar.customModules.updates.pollingInterval": 21600000,
+  "bar.customModules.updates.pollingInterval": 1440000,
   "menus.media.displayTimeTooltip": false,
   "menus.power.showLabel": true,
   "theme.font.name": "JetBrainsMonoNL Nerd Font Mono",
@@ -60,5 +60,9 @@
   "menus.dashboard.directories.left.directory3.command": "bash -c \"xdg-open $HOME/git/\"",
   "menus.dashboard.directories.left.directory3.label": "󰚝 git",
   "menus.dashboard.directories.left.directory2.command": "bash -c \"xdg-open $HOME/.config/\"",
-  "menus.dashboard.directories.left.directory2.label": "󰉏 .config"
+  "menus.dashboard.directories.left.directory2.label": "󰉏 .config",
+  "bar.workspaces.numbered_active_indicator": "highlight",
+  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.showApplicationIcons": false
 }
