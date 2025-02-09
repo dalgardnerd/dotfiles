@@ -64,5 +64,6 @@
   "bar.workspaces.numbered_active_indicator": "highlight",
   "bar.workspaces.showWsIcons": true,
   "bar.workspaces.show_icons": false,
-  "bar.workspaces.showApplicationIcons": false
+  "bar.workspaces.showApplicationIcons": true,
+  "menus.dashboard.stats.enable_gpu": true
 }
