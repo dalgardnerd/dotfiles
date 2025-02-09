@@ -19,6 +19,7 @@ return {
           "hyprlang",
           "python",
           "svelte",
+          "go",
         },
         highlight = { enable = true },
         indent = { enable = false },
