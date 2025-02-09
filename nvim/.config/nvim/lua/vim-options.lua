@@ -6,13 +6,18 @@ vim.g.mapleader = " "
 
 vim.opt.swapfile = false
 
--- Navigate vim panes better
-vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
-vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
-vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
-vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
+
+
+-- Write changes 
 vim.keymap.set('n', 'ZW', '<Esc>:w<CR>')
+
+vim.keymap.set('v', '<C-c>', '"+y')
+vim.keymap.set('n', '<C-c>', 'gg0vG$"+y')
+vim.keymap.set('n', '<C-v>', '"+p')
+
+-- Change current line to caps
+vim.keymap.set('n', '<leader>cl', 'V~', {noremap = true, silent = true})
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
