@@ -1,0 +1,30 @@
+$RESET = hyprctl dispatch submap reset
+
+
+bind = ALT, R, submap, resize
+
+
+
+
+
+
+
+submap = resize
+bind = , M,  exec, hyprctl dispatch moveactive exact 1280 10 && hyprctl dispatch resizeactive exact 2560 1420 && $RESET
+bind = , L,  exec, hyprctl dispatch moveactive exact 10 10 && hyprctl dispatch resizeactive exact 1260 1420 && $RESET
+bind = , R,  exec, hyprctl dispatch moveactive exact 3850 10 && hyprctl dispatch resizeactive exact 1260 1420 && $RESET
+bind = , 1,  exec, hyprctl dispatch moveactive exact 1280 10 && hyprctl dispatch resizeactive exact 2560 1420 && $RESET
+bind = , 2,  exec, hyprctl dispatch moveactive exact 10 10 && hyprctl dispatch resizeactive exact 1260 1420 && $RESET
+bind = , 3,  exec, hyprctl dispatch moveactive exact 3850 10 && hyprctl dispatch resizeactive exact 1260 1420 && $RESET
+bind = , escape, submap, reset 
+submap = reset
+
+
+
+
+
+
+
+
+
+
