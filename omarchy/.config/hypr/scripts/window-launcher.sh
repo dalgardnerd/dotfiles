@@ -15,10 +15,16 @@ if [ -n "$selector" ]; then
 # if not running, check for special launch case
 else
     case $1 in
-    omarchy-launch-browser)
-        omarchy-launch-browser
+    chromium)                    # application name provided to the script, $1
+        omarchy-launch-browser & # launch command for the app, & runs it in the background
         ;;
-    *) # fallback case, if no launch command specified, launch using script argument
+    obsidian)
+        uwsm app -- obsidian -disable-gpu &
+        ;;
+
+    # fallback case, if no launch command specified, launch using script argument
+
+    *)
         if command -v "$1" >/dev/null 2>&1; then
             "$1" &
         else
